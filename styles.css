@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+	background: #ed0071;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    flex: 1 1 auto;
+    height: 100vh;
+}
+
+/* Escritorio */
+@media only screen and (min-width: 882px) {
+    #imagen2 {
+        display: none;
+    }
+	#imagen1 {
+		overflow: hidden;
+    }
+}
+
+/* Móvil */
+@media only screen and (max-width: 881px) {
+    #imagen1 {
+        display: none;
+    }
+
+	#imagen2 {
+		overflow: hidden;
+		height: 95vh;
+    }
+}
