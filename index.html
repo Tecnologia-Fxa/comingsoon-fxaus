@@ -3,13 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi página web</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Fxa By Fuxia</title>
+        <link rel="stylesheet" type="text/css" href="util/styles/styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <main>
-            <img id="imagen1" src="Desktop.png" alt="Imagen de escritorio">
-            <img id="imagen2" src="Mobile.png" alt="Imagen de celular">
-        </main>
+        <div class="global">
+            <div id="page1" class="page1">
+                <main>
+                    <img id="imagen1" src="/util/img/Desktop.png" alt="Imagen de escritorio">
+                    <img id="imagen2" src="util/img/Mobile.png" alt="Imagen de celular">
+                </main>
+            </div>
+            <div id="page2" class="page2 hidden">
+                <div class="card">
+                    <h3 class="title-conten">Find Us Here</h3>
+                    <div id="radios">
+                        <label for="input1">
+                            <input id="input1" name="radio" type="radio" value="map1-google" checked/>
+                            <span>The Florida Mall</span>
+                        </label>
+                        <label for="input2">
+                            <input id="input2" name="radio" type="radio"  value="map2-google"/>
+                            <span>Coral Square Mall</span>
+                        </label>
+                        <label for="input3">
+                            <input id="input3" name="radio" type="radio"  value="map3-google"/>
+                            <span>Melbourne Mall</span>
+                        </label>
+                        <label for="input4">
+                            <input id="input4" name="radio" type="radio" value="map4-google" />
+                            <span>Wellington Mall</span>
+                        </label>
+                    </div>
+                    <p id="test-select"></p>
+                    <div class="mapa">
+                        <iframe class="display-map" id="map1-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.1156913516584!2d-81.39808392426117!3d28.445928692529648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77df712842323%3A0x2a596e15c8f85de0!2sThe%20Florida%20Mall!5e0!3m2!1sen!2sco!4v1681742518666!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe id="map2-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11694.415708489829!2d-80.25276540663478!3d26.24063364400704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9050d8d902a31%3A0xcb36b4fa593c2493!2sCoral%20Square!5e0!3m2!1sen!2sco!4v1681742908081!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </div>
+                    <button id="closePopup">X</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="util/script/script.js"></script>
     </body>
 </html>
